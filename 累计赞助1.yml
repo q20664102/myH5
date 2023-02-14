@@ -1,0 +1,246 @@
+Title:
+  - '&7&f累计赞助礼包'
+
+
+Layout:
+  - - '#@@@@@@@!'
+    - '<a b c d>'
+    - '<e f g h>'
+    - '<i j k l>'
+    - '<m n o p>'
+    - '$%%%%%%%&'
+
+
+
+
+
+
+Icons:
+#出售内容----------------------------------
+  a:
+    display:
+      mats: 'MENUIMAGE_SKILL_15'
+      name: '&a累计赞助30元礼包'
+      lore:
+        - ''
+        - '&c您的赞助金额还不够哦！'
+    actions:
+      left:
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+    icons:
+    - condition: 'check *30 <= papi *%zax7ypay_total%'
+      priority: 2
+      display:
+        mats: 'MENUIMAGE_ITEMS_106'
+        name: '&a累计赞助30元礼包'
+        lore:
+          - ' '
+          - '&b&n[可领取]'
+          - ''
+          - ''
+          - '&f[&a左键&f]&f领取'
+      actions:
+        left:
+          - 'Console: cmi usermeta %cmi_user_name% add 累充30 已领取'
+          - 'Console: give %cmi_user_name% STONE 1'
+          - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+          - 'close'
+    - condition: 'check *已领取 is papi *%cmi_user_meta_累充30%'
+      priority: 1
+      display:
+        mats: 'MENUIMAGE_ITEMS_106'
+        name: '&a累计赞助30元礼包'
+        lore:
+          - ' '
+          - '&c&n[已领取]'
+          - ''
+      actions:
+        left:
+          - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+          - 'close'
+  b:
+    display:
+      mats: 'MENUIMAGE_SKILL_15'
+      name: '&a累计赞助50元礼包'
+      lore:
+        - ''
+        - '&c您的赞助金额还不够哦！'
+    actions:
+      left:
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+    icons:
+    - condition: 'check *50 <= papi *%zax7ypay_total%'
+      priority: 2
+      display:
+        mats: 'MENUIMAGE_ITEMS_106'
+        name: '&a累计赞助50元礼包'
+        lore:
+        - ' '
+        - '&b&n[可领取]'
+        - ''
+        - ''
+        - '&f[&a左键&f]&f领取'
+      actions:
+        left:
+        - 'Console: cmi usermeta %cmi_user_name% add 累充50 已领取'
+        - 'Console: give %cmi_user_name% STONE 1'
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+        - 'close'
+    - condition: 'check *已领取 is papi *%cmi_user_meta_累充50%'
+      priority: 1
+      display:
+        mats: 'MENUIMAGE_ITEMS_106'
+        name: '&a累计赞助50元礼包'
+        lore:
+        - ' '
+        - '&c&n[已领取]'
+        - ''
+      actions:
+        left:
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+        - 'close'     
+  c:
+    display:
+      mats: 'MENUIMAGE_SKILL_15'
+      name: '&a累计赞助100元礼包'
+      lore:
+        - ''
+        - '&c您的赞助金额还不够哦！'
+    actions:
+      left:
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+    icons:
+    - condition: 'check *100 <= papi *%zax7ypay_total%'
+      priority: 2
+      display:
+        mats: 'MENUIMAGE_ITEMS_106'
+        name: '&a累计赞助100元礼包'
+        lore:
+        - ' '
+        - '&b&n[可领取]'
+        - ''
+        - ''
+        - '&f[&a左键&f]&f领取'
+      actions:
+        left:
+        - 'Console: cmi usermeta %cmi_user_name% add 累充100 已领取'
+        - 'Console: give %cmi_user_name% STONE 1'
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+        - 'close'
+    - condition: 'check *已领取 is papi *%cmi_user_meta_累充100%'
+      priority: 1
+      display:
+        mats: 'MENUIMAGE_ITEMS_106'
+        name: '&a累计赞助100元礼包'
+        lore:
+        - ' '
+        - '&c&n[已领取]'
+        - ''
+      actions:
+        left:
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+        - 'close'    
+  d:
+    display:
+      mats: 'MENUIMAGE_SKILL_15'
+      name: '&a累计赞助1000元礼包'
+      lore:
+        - ''
+        - '&c您的赞助金额还不够哦！'
+    actions:
+      left:
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+    icons:
+    - condition: 'check *1000 <= papi *%zax7ypay_total%'
+      priority: 2
+      display:
+        mats: 'MENUIMAGE_ITEMS_106'
+        name: '&a累计赞助1000元礼包'
+        lore:
+        - ' '
+        - '&b&n[可领取]'
+        - ''
+        - ''
+        - '&f[&a左键&f]&f领取'
+      actions:
+        left:
+        - 'Console: cmi usermeta %cmi_user_name% add 累充1000 已领取'
+        - 'Console: give %cmi_user_name% STONE 1'
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+        - 'close'
+    - condition: 'check *已领取 is papi *%cmi_user_meta_累充1000%'
+      priority: 1
+      display:
+        mats: 'MENUIMAGE_ITEMS_106'
+        name: '&a累计赞助1000元礼包'
+        lore:
+        - ' '
+        - '&c&n[已领取]'
+        - ''
+      actions:
+        left:
+        - 'sound: ENTITY_EXPERIENCE_ORB_PICKUP-1-2'
+        - 'close'         
+#出售内容----------------------------------
+
+
+
+
+
+
+
+#返回菜单----------------------------------
+  '上':
+    display:
+      mats: 'MENUIMAGE_ITEMS_89'
+      name: "&b上一页"
+    actions:
+      all: 
+        - 'open: 主菜单'
+  '下':
+    display:
+      mats: 'MENUIMAGE_ITEMS_90'
+      name: "&b下一页"
+    actions:
+      all: 
+        - 'open: 神兽商店2'
+#返回菜单----------------------------------
+
+#菜单边框--------------------------------------
+  '*':
+    display:
+      mats: 'MENUIMAGE_RPG_23'
+      name: "&b别看了,啥也没有"
+  '#':
+    display:
+      mats: 'MENUIMAGE_FRAME_13'
+      name: "&7&l七日之都分割线"
+  '!':
+    display:
+      mats: 'MENUIMAGE_FRAME_15'
+      name: "&7&l七日之都分割线"
+  '$':
+    display:
+      mats: 'MENUIMAGE_FRAME_18'
+      name: "&7&l七日之都分割线"
+  '&':
+    display:
+      mats: 'MENUIMAGE_FRAME_20'
+      name: "&7&l七日之都分割线"
+  '@':
+    display:
+      mats: 'MENUIMAGE_FRAME_14'
+      name: "&7&l七日之都分割线"
+  '%':
+    display:
+      mats: 'MENUIMAGE_FRAME_19'
+      name: "&7&l七日之都分割线"
+  '<':
+    display:
+      mats: 'MENUIMAGE_FRAME_16'
+      name: "&7&l七日之都分割线"
+  '>':
+    display:
+      mats: 'MENUIMAGE_FRAME_17'
+      name: "&7&l七日之都分割线"
+#菜单边框--------------------------------------
