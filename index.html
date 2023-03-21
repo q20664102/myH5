@@ -4,6 +4,7 @@
 	<title>个人简历</title>
 	<style type="text/css">
 		body {
+			/* 字体名称 */
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
@@ -11,12 +12,19 @@
 		}
 		.container {
 			max-width: 800px;
+			/* 元素内容周围空白区域的大小 */
 			margin: 0 auto;
+			/* 元素内容与其边框的空白距离 */
 			padding: 20px;
+			/*网页背景色*/
 			background-color: #fff;
+			/*阴影*/
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			/* 居中 */
 			text-align: center;
+			/* 元素边框的圆角半径 */
 			border-radius: 10px;
+			/* 内容超出容器时隐藏内容 */
 			overflow: hidden;
 		}
 		h1, h2 {
@@ -44,15 +52,19 @@
 			font-size: 16px;
 			line-height: 1.5;
 		}
+		/* 分类板块样式 */
 		.section-header {
+			/* 分类板块颜色渐变 */
 			background: linear-gradient(to right, #00bcd4, #2196f3);
 			color: #fff;
 			padding: 5px 10px;
 			margin-bottom: 20px;
+			/* 文字左对齐 */
 			text-align: left;
 			border-radius: 5px;
 			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 		}
+		/* 内容板块样式 */
 		.section-content {
 			padding: 10px;
 			text-align: left;
@@ -82,34 +94,35 @@
 				</div>
 			</section>
 			<section>
-							<div class="section-header">
-								<h2>荣誉与奖项</h2>
-							</div>
-							<div class="section-content">
-								<ul>
-									<li>美国《时代周刊》2006年度风云人物</li>
-									<li>《感动中国》2008年度人物</li>
-									<li>联合国2019年度“地球卫士奖”联合获奖人</li>
-									<li>国际奥委会2022年”奥林匹克奖杯“获奖者</li>
-								</ul>
-							</div>
-						</section>
-						<section>
-							<div class="section-header">
-								<h2>技能</h2>
-							</div>
-							<div class="section-content">
-								<ul>
-									<li>熟练掌握Java编程语言</li>
-									<li>熟悉C语言基础</li>
-									<li>下雨会往家里跑</li>
-								</ul>
-							</div>
-						</section>
-					</main>
-					<footer>
-						<img src="img/photo.png" alt="个人照片">
-					</footer>
+				<div class="section-header">
+					<h2>荣誉与奖项</h2>
 				</div>
-			</body>
-			</html>
+				<div class="section-content">
+					<ul>
+						<li>美国《时代周刊》2006年度风云人物</li>
+						<li>《感动中国》2008年度人物</li>
+						<li>联合国2019年度“地球卫士奖”联合获奖人</li>
+						<li>国际奥委会2022年”奥林匹克奖杯“获奖者</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="section-header">
+					<h2>技能</h2>
+				</div>
+				<div class="section-content">
+					<ul>
+						<li>熟练掌握Java编程语言</li>
+						<li>熟悉C语言基础</li>
+						<li>下雨会往家里跑</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<!-- 页脚设置个人照片 -->
+		<footer>
+			<img src="img\photo.png" alt="个人照片">
+		</footer>
+	</div>
+	</body>
+</html>
